@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>刘洋 · 产品经理简历与项目作品集</title>
+<meta name="description" content="刘洋 · 产品经理个人简历与项目作品集：5 年 B/G 端软件产品经验，深耕水利信息化与海外建管数字化，12 个交付项目。">
+<meta name="author" content="刘洋">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="hero-nav-indicator" id="nav-dots"></div>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="site-nav" id="top">
+  <div class="nav-inner">
+    <a class="brand" href="#top">刘洋<span class="brand-sub">· 产品经理</span></a>
+    <nav class="nav-links" id="nav-links" aria-label="主导航">
+      <a href="#about">简介</a>
+      <a href="#experience">工作经历</a>
+      <a href="#projects">项目作品</a>
+      <a href="#skills">能力证书</a>
+      <a href="#education" class="nav-cta">联系我</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="sr-only">菜单</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="hero-avatar" id="hero-avatar" role="img" aria-label="刘洋头像">
+          <img src="assets/avatar.jpg" alt="刘洋" >
+        </div>
+        <p class="eyebrow">产品经理 · PM Portfolio</p>
+        <h1>刘洋</h1>
+        <p class="hero-role">水利信息化 · 海外建管数字化</p>
+        <p class="hero-sub" id="hero-sub"></p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">查看项目作品</a>
+          <a class="btn btn-ghost" href="#education">联系我</a>
+        </div>
+        <ul class="hero-contact" id="hero-contact"></ul>
+      </div>
+      <aside class="hero-panel">
+        <dl class="stat-list" id="stat-list"></dl>
+        <div class="hero-note">求职意向：产品经理 · 可接受驻场与高频出差 · 英语日常沟通（CET-6）</div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- About / 自我评价 -->
+  <section class="section" id="about">
+    <header class="section-head">
+      <p class="eyebrow">About</p>
+      <h2>关于我</h2>
+      <p class="section-desc">个人品性与职业特质，来自多年一线交付与驻场经历。</p>
+    </header>
+    <div class="about-grid" id="about-grid"></div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section section-alt" id="experience">
+    <header class="section-head">
+      <p class="eyebrow">Experience</p>
+      <h2>工作经历</h2>
+      <p class="section-desc">2020 – 2026，四段 B/G 端软件产品与驻场交付经历。</p>
+    </header>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <header class="section-head">
+      <p class="eyebrow">Selected Work</p>
+      <h2>项目作品</h2>
+      <p class="section-desc">按业务板块归档的 12 项项目作品，来源于本人整理的《简历资料》项目档案库。</p>
+    </header>
+    <div class="filter-bar" id="filter-bar" role="group" aria-label="项目板块筛选"></div>
+    <div class="project-grid" id="project-grid"></div>
+    <p class="grid-empty" id="grid-empty" hidden>该板块下暂无项目。</p>
+  </section>
+
+  <!-- Skills & Certificates -->
+  <section class="section section-alt" id="skills">
+    <header class="section-head">
+      <p class="eyebrow">Capabilities</p>
+      <h2>能力与证书</h2>
+      <p class="section-desc">产品专业能力、业务领域认知与交付协作能力。</p>
+    </header>
+    <div class="skills-layout" id="skills-layout">
+      <div class="ability-list" id="ability-list"></div>
+      <div class="cert-panel" id="cert-panel">
+        <h3>证书</h3>
+        <ul id="cert-list"></ul>
+        <h3>教育背景</h3>
+        <div class="edu-card" id="edu-card"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="education">
+    <header class="section-head">
+      <p class="eyebrow">Contact</p>
+      <h2>保持联系</h2>
+      <p class="section-desc">欢迎通过电话或邮件联系，期待沟通产品经理岗位机会。</p>
+    </header>
+    <div class="contact-strip" id="contact-strip"></div>
+  </section>
+</main>
+
+<div class="proj-overlay" id="proj-overlay"><div class="proj-modal"></div></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
