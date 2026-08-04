@@ -21,9 +21,9 @@
     avImg.src = 'assets/avatar.jpg';
   }
 
-  // Hero text
-  var heroSub = document.getElementById('hero-sub');
-  if (heroSub) heroSub.textContent = P.summary;
+
+
+
 
   // Hero contact info
   var contact = document.getElementById('hero-contact');
